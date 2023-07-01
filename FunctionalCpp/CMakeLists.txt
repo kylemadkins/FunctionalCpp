@@ -9,4 +9,8 @@ if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET FunctionalCpp PROPERTY CXX_STANDARD 20)
 endif()
 
-# TODO: Add tests and install targets if needed.
+target_include_directories (FunctionalCpp PRIVATE "external/RxCpp/Rx/v2/src")
+
+add_subdirectory ("external/Catch2")
+
+target_link_libraries (FunctionalCpp PRIVATE Catch2::Catch2WithMain)

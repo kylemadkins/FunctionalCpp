@@ -1,0 +1,6 @@
+[submodule "FunctionalCpp/external/RxCpp"]
+	path = FunctionalCpp/external/RxCpp
+	url = https://github.com/ReactiveX/RxCpp.git
+[submodule "FunctionalCpp/external/Catch2"]
+	path = FunctionalCpp/external/Catch2
+	url = https://github.com/catchorg/Catch2.git
